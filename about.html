@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Accommodated Testing Services, University of Toronto">
+  <meta name="keywords" content="ATS, Accommodated Testing Services, UofT, accomodation, accessibility, registration, sequestering">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+  <title>About Us | Accommodated Testing Services</title>
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <!-- JQuery Latest as of 2019 July -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS Animation with Parallax Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="wrapper"> <!-- Mobile: fit to screen -->
+    <nav>
+      <div class="desktop_nav" aria-labelledby="banner">
+        <a id="skip_link" href="#mainContent">Skip Navigation Bar</a>
+
+        <div class="websites">
+          <img id="uoft_logo" tabindex="0" role="link"
+          onclick="openLink(event, 'https://www.utoronto.ca/')"
+          onkeydown="openLink(event, 'https://www.utoronto.ca/')"
+          src="images/icons/UofT_Logo.svg" alt="University of Toronto"/>
+
+          <div role="separator" aria-orientation="vertical" class="vertical_line"></div>
+
+          <img id="ats_logo" tabindex="0" role="link"
+          onclick="goToLink(event, 'index.html')"
+          onkeydown="goToLink(event, 'index.html')"
+          src="images/icons/ATS_logo.svg" alt="Accommodated Testing Services"/>
+        </div>
+
+        <a id="hot-button" target="_blank" href="https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx">
+          Register Now!
+        </a>
+        <!-- hamburger menu -->
+        <a id="menu_icon" href="javascript:void(0);" class="icon" onclick="openNav()" role="button" aria-hidden="true" aria-label="Menu Button" aria-haspopup="true" aria-controls="menu2">
+          <i alt="three horizontal lines stacked over each other"
+          class="material-icons">menu</i>
+        </a>
+
+      </div>
+      <div role="menubar" id="mobile_nav" class="overlay" aria-label="Main Menu" aria-hidden="true" style="display">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul role="menu" class="overlay-content">
+          <li role="none">
+            <a role="menuitem" href="https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx">Register Now!</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="index.html">Home</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="info_for_students.html">Information for Students</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="about.html">About Us</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="gallery.html">Gallery</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="rules.html">Rules of Conduct of Tests & Exam Services</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="info_for_staff.html">Information for Staff & Faculty</a>
+          </li>
+        </ul>
+      </div>
+      <div role="menu" id="sub_nav" aria-label="Main Menu">
+        <a role="menuitem" href="info_for_students.html">Information for Students</a>
+        <a role="menuitem" class="active-tab" href="about.html">About Us</a>
+        <a role="menuitem" href="gallery.html">Gallery</a>
+        <a role="menuitem" href="info_for_staff.html">Information for Staff & Faculty</a>
+        <a role="menuitem" href="rules.html">Rules of Conduct of Tests & Exam Services</a>
+      </div>
+    </nav>
+    <div class="container" role="none">
+      <div class="main" role="main">
+        <div id="mainContent" style="position: relative; top: -14vh;background: yellow;">I am an anchor to main content</div>
+
+        <div role="region" aria-label="Introduction" class="intro" data-aos="fade-up">
+          <h1>About Us</h1>
+          <p>
+            Balancing academic accommodation and academic integrity, Accommodated
+            Testing Services administers and coordinates
+          </p>
+          <div class="logos" >
+            <div class="circle" style="background: #5F7989;">
+              <span class="large" >quizzes</span>
+            </div>
+            <i aria-hidden="true" class="material-icons large">add</i>
+            <div role="none" class="circle" style="background: #995441;">
+              <span class="large">term Tests</span>
+            </div>
+            <i aria-hidden="true" class="material-icons large">add</i>
+            <div role="none" class="circle" style="background: #8C9B65;">
+              <span class="large">exams</span>
+            </div>
+          </div>
+          <!-- End of logos -->
+          <p>
+            for students with documented disabilities enrolled in
+            <strong>
+              any department, any faculty, and any level of study
+            </strong>
+            at the University of Toronto, Downtown Campus
+          </p>
+        </div>
+        <!-- End of Intro -->
+
+        <div class="banner" role="banner">
+          <div id="stats" role="region" aria-label="Statistics">
+            <p>We have coordinated and adminstered</p>
+            <div aria-label="animation count up from 0 to 21800" class="number" data-count="21800">0</div>
+            <p>
+              quizzes, tests, and exams with accommodation for students with
+              disabilities enrolled in Downtown Campus courses during the
+              2018-2019 academic year
+            </p>
+          </div>
+
+          <div class="hierarchy" role="none">
+            <img role="presentation" class="icon" src="images/icons/ace_n_ats.svg"
+            alt="Accommodated Testing Services is a subset of Academic and Campus Events"/>
+            <p>
+              Accommodated Testing Services is division of
+              <a href="https://www.ace.utoronto.ca/" target="_blank">
+              Academic + Campus Events (ACE)
+              </a>
+            </p>
+          </div>
+        </div>
+        <!-- End of Banner -->
+
+        <div class="collaboration" role="region" aria-label="relationship with accessability services">
+
+          <img data-aos="fade-right" class="medium-icon" src="images/icons/ats.svg" alt="Accommodated Testing Services Logo">
+
+          <div class="middle">
+            <p>Working cooperatively with
+              <a href="http://www.studentlife.utoronto.ca/as" target="_blank">Accessibility Services</a>
+            </p>
+
+            <svg height="50" width="400" role="presentation">
+              <circle role="presentation" cx="10" cy="25" r="10" fill="#A5B7C1" />
+              <circle role="presentation" cx="100" cy="25" r="10" fill="#A5B7C1" />
+              <circle role="presentation" cx="200" cy="25" r="10" fill="#A5B7C1" />
+              <circle role="presentation" cx="300" cy="25" r="10" fill="#A5B7C1" />
+              <circle role="presentation" cx="390" cy="25" r="10" fill="#A5B7C1" />
+            </svg>
+            <p>
+              and the institution's faculty and staff, Accommodated Testing Services plays
+              a vital role in the execution of the University of Toronto's commitment
+              to accessibility.
+            </p>
+
+          </div>
+          <!-- End of Middle -->
+
+          <img data-aos="fade-left" class="medium-icon" src="images/icons/accessibility_services.svg" alt="Accessibility Services Logo">
+        </div>
+
+        <div class="box" data-aos="fade-up" role="banner">
+          <div class="box-content" role="region">
+            <h2>The University's Commitment to Accessibility</h2>
+            <p>
+              The University of Toronto provides accommodation for students with
+              documented disabilities as established by the Ontario Human Rights
+              Code (OHRC), the Accessibility for Ontarians with Disabilities Act
+              (AODA), and the University of Toronto's Statement of Commitment to
+              Persons with Disabilities.
+            </p>
+            <p>
+              All students who write quizzes, tests, and exams with accommodations
+              through Accommodated Testing Services have documented disabilities and they
+              must be currently registered with Accessibility Services.
+            </p>
+          </div>
+
+          <div class="box-content" role="region">
+            <h2>Academic Integrity</h2>
+            <p>
+              Accommodated Testing Services' exam proctors receive extensive, intensive
+              training that focuses on balancing academic accommodation with
+              academic integrity. The academic conduct of students who write
+              quizzes, tests, and exams with accommodations is governed by the
+              same policies and procedures that govern all students at the
+              University of Toronto:
+            </p>
+
+            <div class="box-buttons" role="none">
+              <div class="box-button btn-left" role="none">
+                <span role="none"> <a href="http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf" target="_blank">
+                  Code of Behaviour on Academic Matters University of Toronto
+                </a> </span>
+              </div>
+
+              <div role="seperator" class="divider"></div>
+
+              <div class="box-button btn-right" role="none">
+                <span role="none"><a href="http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjul012002.pdf" target="_blank">
+                  Code of Student Conduct University of Toronto
+                </a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <a role="presentation" name="contact_us"></a>
+      <div id="contact" role="contentinfo" aria-label="contact information">
+        <h3>Contact Us</h3>
+        <div role="none" id="contact-container" aria-label="map">
+          <div role="none" class="map" aria-labelledby="contact-container">
+              <iframe role="img" alt="google map of TES office" width="500" height="400" id="google_map"
+              src="https://maps.google.com/maps?q=exam%20center&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+          </div>
+          <div class="contact-content" aria-labelledby="contact">
+            <h4>Address</h4>
+            <p>
+              Accommodated Testing Services<br>
+              University of Toronto, Downtown Campus<br>
+              Exam Centre(EX)<br>
+              255 McCaul Street, Exam Room 340<br>
+              Toronto, Ontario, M5T 1W7
+            </p>
+
+            <h4>Hours of Operation</h4>
+            <p>
+              Monday through Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 AM - 4:30 PM
+            </p>
+
+            <h4>General Inquiries</h4>
+            <p>
+              E-mail: tes.info@utoronto.ca<br>
+              Telephone: (416) 946-8584
+            </p>
+
+            <h4>
+              <a style="font-weight: bold; text-decoration: underline;"
+            href="employment.html">Employment Opportunities</a>
+            </h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="resources-container" role="contentinfo" aria-label="External resources">
+        <h3>Related Resources</h3>
+        <div class="external-links" role="none" aria-label="External resources">
+          <div role="group" class="link-card" aria-label="External links downtown campus">
+            <h4>Downtown Campus</h4>
+            <ol>
+              <li><a href="http://www.accessibility.utoronto.ca/" target="_blank">Accessibility Services</a></li>
+              <li><a href="http://www.artsci.utoronto.ca/osai" target="_blank">Office of Student Academic Integrity (OSAI)</a></li>
+              <li><a href="http://www.artsci.utoronto.ca/faculty-staff/teacher-info/academic-handbook-for-instructors" target="_blank">Academic Handbook for Instructors: Section 13- Accessibility/Disability Issues</a></li>
+            </ol>
+          </div>
+          <div role="group" class="link-card" aria-label="External links Mississauga and Scarborough campus">
+            <h4>Mississauga  Campus</h4>
+            <a href="http://www.utm.utoronto.ca/accessability/accessability-resource-centre-2037-davis-building" target="_blank">AccessAbility Resource Centre</a>
+
+            <h4>Scarborough  Campus</h4>
+            <a href="http://www.utsc.utoronto.ca/~ability/" target="_blank">AccessAbility Services</a>
+          </div>
+          <div role="group" class="link-card" aria-label="General external links">
+            <h4>University Resources</h4>
+            <ol>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/disabled.htm" target="_blank">Statement of Commitment Regarding Persons with Disabilities</a></li>
+              <li><a href="http://www.hrandequity.utoronto.ca/about-hr-equity/diversity/aoda.htm" target="_blank">Accessibility for Ontarians with Disabilities Act (AODA) Office</a></li>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm" target="_blank">Code of Behaviour on Academic Matters</a></li>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/studentc.htm" target="_blank">Code of Student Conduct</a></li>
+           </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<footer>
+  <!-- CSS Animation -->
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/navbar_scroll.js"></script>
+  <script src="js/mobile-nav.js"></script>
+  <script src="js/count-up.js"></script>
+  <script src="js/accessible_external_links.js"></script>
+</footer>

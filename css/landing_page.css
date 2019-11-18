@@ -1,0 +1,290 @@
+/* --------------------------------Landing Page------------------------------ */
+main {
+  padding-top: 14vh;
+}
+
+main a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #002A5C;
+  transition: 0.3s;
+}
+main a:hover, main a:focus  {
+  border-bottom: 1px solid #002A5C;
+
+}
+main ol {
+  list-style-type: decimal;
+}
+.hero-image {
+  margin: 0px;
+  height: 40vh;
+  background-image:
+    linear-gradient(
+      rgba(0,42,92, 0.5),
+      rgba(0,42,92, 0.4)
+      ),
+    url("../Images/location.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #002A5C;
+  padding: 30px;
+  color: white;
+}
+
+.hero-text h1, .hero-text .medium {
+  font-weight: bold;
+  font-size: 5vh;
+  margin: 2px;
+  text-align: left;
+}
+
+.hero-text .small {
+  font-size: 2vh;
+  margin: 2px;
+  text-align: left;
+}
+
+/* Registration Deadline */
+.divider {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #002A5C;
+  margin: 0vh 3vw 3vh 3vw;
+  font-size: 20px;
+}
+
+.divider h2 {
+  font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex-grow: 1;
+  background: #002A5C;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+.deadlines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 45px;
+
+}
+/* table styling*/
+.deadlines table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th{
+  background: #717C89;
+  color: white;
+  padding: 10px;
+}
+
+td{
+  border: 2px solid #717C89;
+  padding: 10px;
+  color: #002A5C;
+  font-size: 18px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* card styling */
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  background: #717C89;
+  margin: 0px 7vw;
+  color: white;
+  padding: 2vh .5vw 3vh .5vw;
+}
+
+.card h2, h5{
+  margin: 5px 0px 3px 10px;
+  font-size: 30px;
+}
+
+.content-card img{
+  width: 200px;
+}
+
+.title {
+  padding-top: 50px;
+  padding-left: 4vw;
+}
+
+
+.title h2 {
+  margin: 1px 0px;
+  font-size: 3vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.title .medium {
+  font-size: 18px;
+  letter-spacing: 0;
+  text-align: justify;
+  font-weight: lighter;
+
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2vw;
+  font-size: 18px;
+}
+.text ol{
+  margin: 22px 2px ;
+  /* padding: 0; */
+}
+
+.expanded-button {
+  background-color: white;
+  color: #00245C;
+  padding: 16px 32px;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.expanded-button:hover, .expanded-button:focus {
+  background-color: #002A5C;
+  color: white;
+  width: 90%;
+}
+
+/* Mobile Layout */
+
+/* Booking Confirmation and Notifications */
+.notification {
+  padding: 7vh 1vw;
+}
+.notification h2 {
+  text-align: center;
+}
+.content-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 6vw;
+  padding: 2vh .5vw 3vh .5vw;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.content-card {
+  /*flex: 1 1 0;*/ /*test for mobile view overlap*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-card:not(:last-child) {
+  padding: 1vh 2vw 1vh 0vw ;
+}
+/* .content-card h3{
+  align-self: flex-start;
+  padding-left: 40px;
+} */
+.content{
+  align-self: flex-start;
+  padding-left: 40px;
+}
+.content {
+  line-height: 130%;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 16px;
+}
+
+.content ol{
+  list-style-type: lower-alpha;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    padding-top: 14vh;
+  }
+  .deadlines {
+    margin: 4vh 2vw;
+  }
+
+  .deadlines th, td{
+    padding: 2px 2px;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+
+  .deadlines table{
+    width: 90%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 4vw 6vw 6vw;
+  }
+  .title{
+    padding-bottom: 30px;
+  }
+  .title h2{
+    font-size: 16px;
+    text-align: center;
+  }
+  .title .medium{
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero-text {
+    width: 75%;
+  }
+  .hero-text h1, .hero-text .medium {
+    font-size: 18px;
+
+  }
+
+  .content-container{
+    flex-direction: column;
+  }
+  .content-card {
+    padding: 0;
+  }
+  .content-card img{
+    width: 150px;
+  }
+
+
+}

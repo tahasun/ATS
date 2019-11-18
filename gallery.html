@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Accommodated Testing Services, University of Toronto">
+  <meta name="keywords" content="ATS, Accommodated Testing Services, UofT, accomodation, accessibility, registration, sequestering">
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.7">
+  <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+  <title>Gallery | Accommodated Testing Services</title>
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/gallery.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JQuery Latest as of 2019 July -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Expanded Gallery Slideshow -->
+  <link rel="stylesheet" href="js/venobox/venobox.css" type="text/css" media="screen" />
+
+  <!-- Masonry -->
+  <!-- <script src="js/masonry-docs/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+
+  <!-- CSS Animation with Parallax Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper"> <!-- Mobile: fit to screen -->
+    <nav>
+      <div class="desktop_nav" aria-labelledby="banner">
+        <a id="skip_link" href="#mainContent">Skip Navigation Bar</a>
+
+        <div class="websites">
+          <img id="uoft_logo" tabindex="0" role="link"
+          onclick="openLink(event, 'https://www.utoronto.ca/')"
+          onkeydown="openLink(event, 'https://www.utoronto.ca/')"
+          src="images/icons/UofT_Logo.svg" alt="University of Toronto"/>
+
+          <div role="separator" aria-orientation="vertical" class="vertical_line"></div>
+
+          <img id="ats_logo" tabindex="0" role="link"
+          onclick="goToLink(event, 'index.html')"
+          onkeydown="goToLink(event, 'index.html')"
+          src="images/icons/ATS_logo.svg" alt="Accommodated Testing Services"/>
+        </div>
+
+        <a id="hot-button" aria-label="registration link" target="_blank" href="https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx">
+          Register Now!
+        </a>
+        <!-- hamburger menu -->
+        <a id="menu_icon" href="javascript:void(0);" class="icon" onclick="openNav()" role="button" aria-hidden="true" aria-label="Menu Button" aria-haspopup="true" aria-controls="menu2">
+          <i alt="three horizontal lines stacked over each other"
+          class="material-icons">menu</i>
+        </a>
+
+      </div>
+      <div role="menubar" id="mobile_nav" class="overlay" aria-label="Main Menu" aria-hidden="true" style="display">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul role="menu" class="overlay-content">
+          <li role="none">
+            <a role="menuitem" href="https://clockwork.studentlife.utoronto.ca/custom/misc/home.aspx">Register Now!</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="index.html">Home</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="info_for_students.html">Information for Students</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="about.html">About Us</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="gallery.html">Gallery</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="rules.html">Rules of Conduct of Tests & Exam Services</a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="info_for_staff.html">Information for Staff & Faculty</a>
+          </li>
+        </ul>
+      </div>
+      <div role="menu" id="sub_nav" aria-label="Main Menu">
+      <a role="menuitem" href="info_for_students.html">Information for Students</a>
+      <a role="menuitem" href="about.html">About Us</a>
+      <a role="menuitem" class="active-tab" href="gallery.html">Gallery</a>
+      <a role="menuitem" href="info_for_staff.html">Information for Staff & Faculty</a>
+      <a role="menuitem" href="rules.html">Rules of Conduct of Tests & Exam Services</a>
+    </div>
+    </nav>
+
+    <div class="container" role="none">
+      <div id="mainContent" style="position: relative; top: -14vh;background: yellow;">I am an anchor to main content</div>
+
+      <div class="main" role="main">
+        <h1>Gallery</h1>
+        <!-- Exam Centre -->
+        <h2> Exam Centre <br>
+        <span class="address">255 McCaul Street</span></h2>
+          <div class="gallery-grid small-grid" role="list" aria-label="Exam centre image gallery">
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX_Gallery" title="Exterior"
+              href="Images/Gallery_images/image000.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Exam Center</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image000.jpg" alt="exam centre exterior"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX_Gallery" title="Entrance to Exam Centre"
+              href="Images/Gallery_images/image001.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Entrance to Exam Centre</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image001.jpg" alt="Entrance"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX_Gallery" title="Main Lobby"
+              href="Images/Gallery_images/image002.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Main Lobby</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image002.jpg" alt="stairs in the Lobby"/></a>
+            </div>
+
+          </div>
+
+          <h2> Exam Room 340 <br>
+          <span class="address">Exam Centre - 255 McCaul Street</span></h2>
+          <!-- Exam Room 340 -->
+          <div class="gallery-grid large-grid" role="list" aria-label="Exam room 340 image gallery">
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Main Entrance"
+              href="Images/Gallery_images/image003.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Main Entrance</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image003.jpg" alt="entrance to room 340"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Main Entrance"
+              href="Images/Gallery_images/image004.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Main Entrance</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image004.jpg"
+              alt="two wooden doors that leads into room 340"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Lobby"
+              href="Images/Gallery_images/image005.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Lobby</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image005.jpg" alt="3 rows of leather seating benches"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Invigilator Office"
+              href="Images/Gallery_images/image006.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Invigilator's Office</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image006.jpg"
+              alt="wooden door to enter the office with glass windows"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Invigilator Office"
+              href="Images/Gallery_images/image007.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Invigilator's Office</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image007.jpg"
+              alt="two seating desks with chairs on both sides"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Semi-Private Aisle"
+              href="Images/Gallery_images/image008.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Semi-Private Aisle</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image008.jpg"
+              alt="10 cubicle writing spaces"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Semi-Private Aisle"
+              href="Images/Gallery_images/image009.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Semi-Private Aisle</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image009.jpg"
+               alt="10 cubicle writing spaces"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Small Private Room "
+              href="Images/Gallery_images/image011.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Small Private Room</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image011.jpg"
+              alt="seating desk with a desktop and chair"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Private Rooms"
+              href="Images/Gallery_images/image010.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Private Rooms</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image010.jpg"
+              alt="hallway with one side of 7 private small rooms "/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox grid-item--height2" data-gall="EX340_Gallery" title="Exam Room 340 Large Private Room"
+              href="Images/Gallery_images/image012.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Large Private Room</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image012.jpg"
+              alt="floor space with a dekstop on a big table and chair"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 West Room"
+              href="Images/Gallery_images/image013.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">West Room</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image013.jpg"
+              alt="many cubicle writing spaces on both sides of the room"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 West Room"
+              href="Images/Gallery_images/image014.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">West Room</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image014.jpg"
+              alt="cubicle writing spaces with a chair and a table"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Washrooms"
+              href="Images/Gallery_images/image015.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Washrooms</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image015.jpg"
+              alt="universal washroom"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Break & Sequestering Area"
+              href="Images/Gallery_images/image016.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Break & Sequestering Area</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image016.jpg"
+              alt="two leather four seaters"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="EX340_Gallery" title="Exam Room 340 Break & Sequestering Area"
+              href="Images/Gallery_images/image017.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">Break & Sequestering Area</p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image017.jpg"
+              alt="leather four seaters against the walls"/></a>
+            </div>
+
+          </div>
+
+          <!-- Chestnut -->
+          <h2> Chestnut Conference Centre <br>
+          <span class="address">Used During Exam Periods in December & April<br><br>
+          89 Chestnut Street <br>
+            Located South of Dundas Street on the East side of Chestnut Street</span> </h2>
+          <div class="gallery-grid medium-grid"  role="list" aria-label="Chestnu conference centre image gallery">
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - Entry to ATS Exam Site (3rd Floor)"
+              href="Images/Gallery_images/image018.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                Entry to ATS Exam Site (3rd Floor)
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image018.jpg"
+              alt="check in desk"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - ATS Eam Site Lobby & Break Areas"
+              href="Images/Gallery_images/image019.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                ATS Eam Site Lobby & Break Areas
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image019.jpg"
+              alt="seating chairs against the wall of the hallway from the exit end"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - Semi-Distraction Reduced Writing Spaces"
+              href="Images/Gallery_images/image020.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                Semi-Distraction Reduced Writing Spaces
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image020.jpg"
+              alt="rows of cubicle writing spaces with a desk and a chair"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - Semi-Distraction Reduced Writing Spaces"
+              href="Images/Gallery_images/image021.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                Semi-Distraction Reduced Writing Spaces
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image021.jpg"
+              alt="cubicle writing spaces with a desk and a chair"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - Semi-Distraction Reduced Writing Spaces"
+              href="Images/Gallery_images/image022.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                Semi-Distraction Reduced Writing Spaces
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image022.jpg"
+              alt="rows of cubicle writing spaces with a desk and a chair"/></a>
+            </div>
+
+            <div class="gallery-grid-item" role="listitem">
+              <a class="venobox" data-gall="Chestnut_Gallery" title="Chestnut - Semi-Distraction Reduced Writing Spaces"
+              href="Images/Gallery_images/image023.jpg">
+              <p data-aos="fade-right" data-aos-duration="1000" class="caption">
+                Semi-Distraction Reduced Writing Spaces
+              </p>
+              <img data-aos="fade-up" src="Images/Gallery_images/image023.jpg"
+              alt="rows of cubicle writing spaces with a desk and a chair"/></a>
+            </div>
+          </div>
+          <!-- End of Gallery Grid -->
+
+      </div>
+
+      <a role="presentation" name="contact_us"></a>
+      <div id="contact" role="contentinfo" aria-label="contact information">
+        <h3>Contact Us</h3>
+        <div role="none" id="contact-container" aria-label="map">
+          <div role="none" class="map" aria-labelledby="contact-container">
+              <iframe role="img" alt="google map of TES office" width="500" height="400" id="google_map"
+              src="https://maps.google.com/maps?q=exam%20center&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+          </div>
+          <div class="contact-content" aria-labelledby="contact">
+            <h4>Address</h4>
+            <p>
+              Accommodated Testing Services<br>
+              University of Toronto, Downtown Campus<br>
+              Exam Centre(EX)<br>
+              255 McCaul Street, Exam Room 340<br>
+              Toronto, Ontario, M5T 1W7
+            </p>
+
+            <h4>Hours of Operation</h4>
+            <p>
+              Monday through Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 AM - 4:30 PM
+            </p>
+
+            <h4>General Inquiries</h4>
+            <p>
+              E-mail: tes.info@utoronto.ca<br>
+              Telephone: (416) 946-8584
+            </p>
+
+            <h4>
+              <a style="font-weight: bold; text-decoration: underline;"
+            href="employment.html">Employment Opportunities</a>
+            </h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="resources-container" role="contentinfo" aria-label="External resources">
+        <h3>Related Resources</h3>
+        <div class="external-links" role="none" aria-label="External resources">
+          <div role="group" class="link-card" aria-label="External links downtown campus">
+            <h4>Downtown Campus</h4>
+            <ol>
+              <li><a href="http://www.accessibility.utoronto.ca/" target="_blank">Accessibility Services</a></li>
+              <li><a href="http://www.artsci.utoronto.ca/osai" target="_blank">Office of Student Academic Integrity (OSAI)</a></li>
+              <li><a href="http://www.artsci.utoronto.ca/faculty-staff/teacher-info/academic-handbook-for-instructors" target="_blank">Academic Handbook for Instructors: Section 13- Accessibility/Disability Issues</a></li>
+            </ol>
+          </div>
+          <div role="group" class="link-card" aria-label="External links Mississauga and Scarborough campus">
+            <h4>Mississauga  Campus</h4>
+            <a href="http://www.utm.utoronto.ca/accessability/accessability-resource-centre-2037-davis-building" target="_blank">AccessAbility Resource Centre</a>
+
+            <h4>Scarborough  Campus</h4>
+            <a href="http://www.utsc.utoronto.ca/~ability/" target="_blank">AccessAbility Services</a>
+          </div>
+          <div role="group" class="link-card" aria-label="General external links">
+            <h4>University Resources</h4>
+            <ol>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/disabled.htm" target="_blank">Statement of Commitment Regarding Persons with Disabilities</a></li>
+              <li><a href="http://www.hrandequity.utoronto.ca/about-hr-equity/diversity/aoda.htm" target="_blank">Accessibility for Ontarians with Disabilities Act (AODA) Office</a></li>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm" target="_blank">Code of Behaviour on Academic Matters</a></li>
+              <li><a href="http://www.governingcouncil.utoronto.ca/policies/studentc.htm" target="_blank">Code of Student Conduct</a></li>
+           </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<footer>
+  <!-- CSS Animation -->
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/accessible_external_links.js"></script>
+  <!-- Gallery Slideshow Expanded -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/venobox/venobox.min.js"></script>
+  <!-- Photo Tiles Masonry -->
+  <!-- <script src="js/imagesloaded.js"></script> -->
+  <script src="js/gallery.js"></script>
+  <script src="js/mobile-nav.js"></script>
+
+  <!-- On scroll down hide navbar -->
+  <script src="js/navbar_scroll.js"></script>
+</footer>

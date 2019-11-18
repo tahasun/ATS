@@ -1,0 +1,216 @@
+.main {
+  padding-top: 160px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+#button a{
+  float: none;
+  display: inline-block;
+  border: 1px solid #00245c;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+#button a:hover, #button a:focus{
+  background: #00245c;
+  color: white;
+}
+
+/* Internal Navigation Styling */
+#internal_nav-container {
+  background: #4E5864;
+  margin-top: 2vh;
+}
+#internal_nav-container p{
+  color: white;
+  font-size: 28px;
+  margin:0;
+  font-weight: bold;
+  padding: 30px 6.2vw 0px 6.2vw;
+}
+.internal_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 6.2vw;
+}
+.nav-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-card li {
+  margin: 10px;
+}
+.nav-card a{
+  color: #FCFCF4;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 1s;
+}
+.nav-card a:hover, .nav-card a:focus{
+  border-bottom: 1px solid #E8E8E8;
+}
+/* ---------------------------------------- */
+/* CONTENT STYLING */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px 6.2vw; */
+
+}
+.content{
+  font-size: 18px;
+  padding: 30px 6.2vw;
+  /* padding: 30px 0px; */
+
+}
+
+.content h5{
+  font-size: 18px;
+}
+.content a {
+  margin: 30px 0px;
+  color: #002A5C;
+  float: right;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 1s;
+}
+.content a:hover, .content a:focus{
+  border-bottom: 1px solid #002A5C;
+}
+
+.content p>a, .content td>a, .booking-content a, .panel a{
+  text-decoration: underline;
+  float: none;
+  color: #456488;
+  font-weight: bold;
+}
+
+.content p>a:hover, .content td>a:hover, .booking-content a:hover, .panel a:hover,
+.content p>a:focus, .content td>a:focus, .booking-content a:focus, .panel a:focus{
+  color: #00142A;
+  border: none;
+}
+.content h4 {
+  font-weight: bold;
+}
+
+/* table styling */
+.content table{
+  border-collapse: collapse;
+  border: 1px solid #002A5C;
+  border-radius: 5px;
+  margin: 30px 0px;
+  align: center;
+}
+
+.content th{
+  background: #002A5C;
+  /* border-radius: 5px 0px 0px 5px; */
+  color: white;
+  text-align: left;
+  padding: 2px 6px;
+  border-bottom: 1px solid white;
+  font-weight: normal;
+}
+
+.content td{
+  border-top: 1px solid #002A5C;
+  border-right: 1px solid #002A5C;
+  /* border-radius: 0px 5px 5px 0px; */
+  padding-left: 10px;
+}
+.no_decor {
+  list-style: none;
+}
+
+.no_decor a{
+  float: none;
+}
+/* Booking Confirmation and Notifications */
+
+.booking-content h3 {
+  text-align: center;
+}
+.booking-content-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0vh 6vw;
+  padding: 2vh .5vw 3vh .5vw;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.booking-content-card {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.booking-content-card:not(:last-child) {
+  padding: 1vh 2vw 1vh 0vw ;
+}
+
+.booking-content{
+  align-self: flex-start;
+  line-height: 130%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.booking-content strong {
+  padding-left: 0;
+}
+
+.booking-content ol{
+  list-style-type: lower-alpha;
+}
+
+
+#Deferred, #Academic_conflicts, #Exam {
+  background-image: url("images/notebook.png");
+  background-repeat: repeat;
+  background-size: 600px;
+}
+
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .main {
+    padding-top: 14vh;
+  }
+
+  .internal_nav {
+    flex-direction: column;
+  }
+
+  .content{
+    padding: 0vh 5vw;
+    font-size: 16px;
+  }
+
+  .panel-title {
+    font-size: 16px;
+  }
+  .booking-content-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking-content-card {
+    /* flex-direction: row; */
+  }
+  .booking-content-card img{
+    width: 150px;
+  }
+}

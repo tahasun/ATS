@@ -1,0 +1,111 @@
+.main{
+    padding: 250px 6.2vw 200px 6.2vw;
+    font-size: 1rem;
+}
+
+ol{
+  list-style-type: none;
+}
+
+h4, h3{
+  margin: 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.big-links-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.big-links{
+  margin-right: 6vw;
+}
+.big-links a{
+  text-decoration: none;
+  text-align: center;
+  padding: 30px;
+  font-size: 28px;
+  color: #001F43;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: transform 0.3s;
+  width: 20vw;
+  height: 15vh;
+}
+
+.big-links a:hover, .big-links a:focus {
+  opacity: 0.9;
+  /* color: black; */
+  transform: scale(1.3);
+}
+.mobile-links {
+  display: none;
+}
+/* Tablet Links */
+@media screen and (max-width: 1300px) {
+  .big-links a{
+    font-size: 22px;
+  }
+
+}
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 14vh;
+  }
+  .big-links-container{
+    display: none;
+  }
+  .mobile-links {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .mobile-links a{
+    text-decoration: underline;
+    font-size: inherit;
+    font-weight: bold;
+    color: inherit;
+    transition: 0.2s;
+  }
+  .mobile-links ol > li {
+    margin-bottom: 4vh;
+  }
+  .mobile-links a:hover, .mobile-links a:focus{
+    text-decoration: underline;
+  }
+
+
+}
+
+#PDF {
+    background-image:
+      linear-gradient(to bottom, rgba(223,224,225, 0.9), rgba(223,224,225, 0.6)),
+      url('../Images/writing-exam.jfif');
+    display:block;
+
+}
+
+#statement {
+    background-image:
+      linear-gradient(to bottom, rgba(223,224,225, 0.9), rgba(223,224,225, 0.6)),
+      url('../Images/pages.png');
+    display:block;
+}
+
+#handbook {
+    background-image:
+      linear-gradient(to bottom, rgba(223,224,225, 0.9), rgba(223,224,225, 0.7)),
+      url('../Images/instructor.jfif');
+    display:block;
+}

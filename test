@@ -1,0 +1,329 @@
+<style>
+  .nestedAccordion {
+      width: 50vw;
+      margin-bottom: 2px;
+  }
+  .nestedAccordion h2, #nestedAccordion h3, #nestedAccordion div, #nestedAccordion p {
+      /* reset styles for accordion */
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      font-weight: normal;
+  }
+  .nestedAccordion div {
+      display: none;
+      color: #FAF7FC;
+      overflow: hidden;
+  }
+  .nestedAccordion h2 {
+      text-transform: capitalize;
+      cursor: pointer;
+      color: #fff;
+      font-size: 16px;
+      font-family: Ariel, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 0.5px;
+      background-color: #002A5C;
+  }
+  .nestedAccordion h3 {
+      text-transform: capitalize;
+      cursor: pointer;
+      color: #fff;
+      font-size: 14px;
+      font-family: Ariel, sans-serif;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 5px;
+      background-color: #4F504C;
+  }
+  .nestedAccordion td > a {
+      background: #2E5079;
+    }
+ .group {
+    width: 50vw;           ;
+    background: #FAF7FC;
+    border-left: 3px solid #2E5079;
+    padding: 15px 0px 15px 0px;
+    margin: 1px 0px;
+    color: #2E5079;
+    margin: 0;
+    }
+ .group td {
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+    }
+ .group tr{
+    padding: 10px 0px 10px 0px;
+    font-size: 12px;
+    }
+ .group tr:hover{
+    background: #2E5079;
+    color: white;
+  }
+ .group tr:focus{
+      background: #2E5079;
+      color: white;
+    }
+
+  #links{
+      border-collapse: separate;
+      border-spacing: 0px 5px;
+      width: 50vw;
+   }
+   .link a {
+      display: block;
+      background-color: #002A5C;
+      width: 50vw;
+      height: 100%;
+      padding: 4px;
+      margin-bottom: 1px;
+   }
+   .link a:hover {
+      background-color: black;
+      color: white;
+   }
+  .link a:focus {
+    background-color: black;
+    color: white;
+   }
+
+ #links td {
+    text-align: center;
+    margin-top: 1px;
+    padding: 0px;
+  }
+
+ #info {
+    color: #002A5C;
+  }
+
+  /*padding for container alignment*/
+  .information {
+      padding-left: 0px; <!-- 165px -->
+   }
+</style>
+<div class="information">
+
+    <table id="links">
+        <tr>
+            <td class="nestedAccordion">
+                <h2 align="center">How to Use the Technology in this Classroom</h2>
+                <div>
+                    <h3><a href="https://www.ace.utoronto.ca/video_player.html?id='|| htf.escape_sc(id) ||'" style="font-size: 14px;" target="_blank"> Click for Instructional Video</a> </h3>
+
+                </div>
+            </td>
+
+        </tr>
+        <tr><td class="link"><a href="https://teaching.utoronto.ca/teaching-support/" target="_blank"> Pedagogical Support CTSI</a></td></tr>
+    </table>
+    <div class="nestedAccordion">
+      <h2 align="center">Accessibility</h2>
+          <div>
+              <h3 class="tab">Building Exterior</h3>
+                  <div>
+                      <table width="100%" align="center" cellspacing="0" class="group">
+                        <tr>
+                        <td width="85%">Curb cuts on the path to the building entrance</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ext_curb) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Wheelchair accessible ramp to accessible entrance</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ext_wheel) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Inaccessible entrances have signage to accessible entrances</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ext_sign) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Handrails are on both sides of the stairwell/ramp that are continuously graspable	</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ext_handrails) ||'</td>
+                        </tr>
+                      </table>
+                  </div>
+              <h3 class="tab">Building Enterior</h3>
+                  <div>
+                      <table width="100%" align="center" cellspacing="0" class="group">
+                        <tr>
+                        <td width="85%">Automatic sliding doors</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ent_auto) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Power doors with large push plates</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ent_power) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Door heaviness</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ent_heavy) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Double doors: enough room for wheelchair to open second door	</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(ent_double) ||'</td>
+                        </tr>
+                      </table>
+                  </div>
+              <h3 class="tab">Elevators</h3>
+                  <div>
+                      <table width="100%" align="center" cellspacing="0" class="group">
+                        <tr>
+                        <td width="85%">Elevator location clearly identified at main entrance</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_clear) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Buttons and emergency controls accessible when seated</td>
+                        <td width="15%"style="font-weight: bold;">'|| htf.escape_sc(elv_seat) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Buttons & emergency controls in large print numbers</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_large_print) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Buttons & emergency controls light up when pressed</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_light) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Audible floor announcements</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_audible) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">All floors served by elevator</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_all_floor) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Indicate floors not served by elevator</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_no_serve) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Additional door entrance once you get off eleveator</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_add_door) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Elevator must be unlocked to use</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_unlock) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Contact to unlock elevator</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_unlock_contact) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Indicate times of day during which elevator is not available</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(elv_na) ||'</td>
+                        </tr>
+
+                      </table>
+                  </div>
+              <h3 class="tab">Washrooms</h3>
+                  <div>
+                      <table width="100%" align="center" cellspacing="0" class="group">
+                        <tr>
+                        <td width="85%">Location of washroom</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(wr_lock) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Single door entrance</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(wr_single) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Door is wide & easy to open</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(wr_wide) ||'</td>
+                        </tr>
+                        <tr>
+                        <td width="85%">Indicate if/where there is accessible washroom</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(wr_access) ||'</td>
+                        </tr>
+                      </table>
+                  </div>
+              <h3 class="tab">Room</h3>
+                  <div>
+                      <table width="100%" align="center" cellspacing="0" class="group">
+                        <tr>
+                        <td width="85%">At least 1 automatic entrance	</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_auto) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Alternate accessible entrance	</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_alt_entrance) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Accessible seating located near accessible entrance</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_accessible_seating) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Aisles large enough for wheelchair/scooter</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_aisles) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Reserved seating/space for wheelchair</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_reserved_seat) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Clear space for wheelchair to navigate</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_space) ||'</td>
+                        </tr>
+
+                        <tr>
+                        <td width="85%">Lights can be dimmed</td>
+                        <td width="15%" style="font-weight: bold;">'|| htf.escape_sc(rm_light) ||'</td>
+                        </tr>
+
+                      </table>
+                  </div>
+          </div>
+
+    </div>
+
+    <p style="margin-top: 20px; font-size: 14px;"> Accessibility information under review. Data provided for reference only. Please email as.huronstreet@utoronto.ca for Accessibility data related queries</p>
+</div>
+
+
+<!--Nested Accordion-->
+    <script>
+    $(document).ready(function() {
+        var parentDivs = $('.nestedAccordion div');
+        var childDivs = $('.nestedAccordion h3').siblings('div');
+        var grandDivs = $('.nestedAccordion h4').siblings('div');
+
+
+        $('.nestedAccordion h2').click(function(){
+            parentDivs.slideUp();
+            if($(this).next().is(':hidden')){
+                $(this).next().slideDown();
+            }else{
+                $(this).next().slideUp();
+            }
+        });
+
+
+        $('.nestedAccordion h3').click(function(){
+            childDivs.slideUp();
+            if($(this).next().is(':hidden')){
+                $(this).next().slideDown();
+            }
+        });
+        $('.nestedAccordion h4').click(function(){
+            grandDivs.slideUp();
+            if($(this).next().is(':hidden')){
+                    $(this).next().slideDown();
+            }
+
+        });
+
+    });
+
+    </script>
