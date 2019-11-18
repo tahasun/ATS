@@ -362,21 +362,22 @@ ul>li {
 
 .Accordion-trigger {
     background: none;
-    border: 0;
     color: #002A5C;
     display: block;
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
-    padding: 1em 1.5em;
+    /* padding: 1em 1.5em; */
     position: relative;
     text-align: left;
     width: 100%;
-}
 
-
-.Accordion dt:first-child .Accordion-trigger {
-    border-radius: .3em .3em 0 0;
+    border-top: 1px solid #383F51;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    transition: 0.4s;
 }
 
 .Accordion-trigger:focus,
@@ -414,7 +415,8 @@ ul>li {
 
 .Accordion-panel {
     margin: 0;
-    padding: 1em 1.5em;
+    padding: 0vh 1vw;
+    font-size: 18px;
 }
 
 .Accordion-panel a{
@@ -436,6 +438,14 @@ ul>li {
 /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
 .Accordion-panel[hidden] {
   display: none;
+}
+
+.Accordion-panel:last-of-type {
+  border-bottom: 1px solid #383F51;
+}
+
+dt:last-of-type{
+  border-bottom: 1px solid hsl(0, 0%, 82%);
 }
 /* ------------------------------------------------------------------------- */
 /*Hamburger Menu Show*/
