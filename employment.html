@@ -97,26 +97,33 @@
         <h1>Employment Opportunities</h2>
 
         <!-- Accordion  -->
-        <div class="Accordion" data-allow-multiple data-allow-toggle>
-
+        <dl id="accordionGroup"
+            role="presentation"
+            class="Accordion"
+            data-allow-toggle>
           <!-- Invigilator -->
-          <button
-            class="Accordion-trigger"
-            aria-controls="sect1"
-            id="accordion1id"
-            type="button">
+          <dt role="heading" aria-level="3">
+            <button aria-expanded="false"
+                    class="Accordion-trigger"
+                    aria-controls="sect1"
+                    id="accordion1id"
+                    type="button">
 
-            <h2 class="Accordion-title">Invigilator</h2>
-            <span>Casual Position (CUPE 3902)</span>
-            <p> <strong>Position Status:</strong>
-              Accepting applications for Fall 2019</p>
-          </button>
+              <h2 class="Accordion-title">Invigilator</h2>
+              <span>Casual Position (CUPE 3902)</span>
+              <p> <strong>Position Status:</strong>
+                Accepting applications for Fall 2019</p>
+              <span class="Accordion-icon"></span>
+            </button>
+          </dt>
           <!-- Invigilator -->
-          <div
+          <dd
             class="Accordion-panel"
             id="sect1"
             role="region"
-            aria-labelledby="accordion1id">
+            aria-labelledby="accordion1id"
+            hidden="">
+            <div>
               <strong> Application Submission Deadline:</strong>
               Friday, July 19, 2019 at 4:00 PM <br>
               <h3>Position Overview </h3>
@@ -150,24 +157,36 @@
                   <a href="forms/2019-2020 Employment Application - Invigilator.pdf"
                   target="_blank">Supplemental Application Form</a> </li>
               </ul>
-             </p>
+              </p>
 
-            <p style="font-weight: bold; padding: 10px 0px;">
-              For More Information and a Detailed Position Summary: Visit the
-              <a href="https://cln.utoronto.ca/home.htm" target="_blank">
-              University of Toronto's Career Centre website.</a>
-            </p>
+              <p style="font-weight: bold; padding: 10px 0px;">
+                For More Information and a Detailed Position Summary: Visit the
+                <a href="https://cln.utoronto.ca/home.htm" target="_blank">
+                University of Toronto's Career Centre website.</a>
+              </p>
           </div>
-
+        </dd>
+        <dt role="heading" aria-level="3">
           <!-- Scribe/ Reader -->
-          <button class="Accordion-trigger">
+          <button class="Accordion-trigger"
+                  aria-expanded="false"
+                  aria-controls="sect2"
+                  id="accordion2id"
+                  type="button">
             <h2 class="Accordion-title">Scribe/Reader (Job ID #81860)</h2>
             <span>Casual Position (USW Casual)</span>
             <p> <strong>Position Status:</strong>
               No longer accepting applications </p>
+            <span class="Accordion-icon"></span>
           </button>
+        </dt>
+        <dd id="sect2"
+            role="region"
+            aria-labelledby="accordion2id"
+            class="Accordion-panel"
+            hidden="">
           <!-- Scribe/ Reader -->
-          <div class="Accordion-panel"  >
+          <div>
             <strong> Application Submission Deadline:</strong>
             <span>Wednesday, August 31, 2016 at 5:00 PM</span>
             <br>
@@ -191,33 +210,49 @@
             <h3>To Apply:</h3>
             <p>Applications may be submitted IN PERSON or BY MAIL and must include:
               <ul>
-              <li>Cover letter</li>
-              <li>Resume</li>
-              <li>ROSI course list/registration status</li>
-              <li>
-                <a href="forms/2019-2020 Employment Application - Invigilator.pdf"
-                target="_blank">
-                  Supplemental Application Form
-                </a>
-              </li>
-            </ul>
+                <li>Cover letter</li>
+                <li>Resume</li>
+                <li>ROSI course list/registration status</li>
+                <li>
+                  <a href="forms/2019-2020 Employment Application - Invigilator.pdf"
+                  target="_blank">
+                    Supplemental Application Form
+                  </a>
+                </li>
+              </ul>
             </p>
             <p style="font-weight: bold; padding: 10px 0px;">
               For More Information and a Detailed Position Summary: Visit the
               <a href="https://cln.utoronto.ca/home.htm" target="_blank">
               University of Toronto's Career Centre website.</a>
             </p>
-          </div>
+          </d
 
+
+
+          iv>
+        </dd>
+        <dt role="heading" aria-level="3">
           <!-- Courier -->
-          <button class="Accordion-trigger">
+          <button aria-expanded="false"
+                  class="Accordion-trigger"
+                  aria-controls="sect3"
+                  id="accordion3id"
+                  type="button">
             <h2 class="Accordion-title">Courier (Job ID #81866)</h2>
             <span>Casual Position (USW Casual)</span>
             <p> <strong>Position Status:</strong>
               No longer accepting applications</p>
+            <span class="Accordion-icon"></span>
           </button>
+        <dt>
+        <dd id="sect3"
+            role="region"
+            aria-labelledby="accordion3id"
+            class="Accordion-panel"
+            hidden="">
           <!-- Courier -->
-          <div class="Accordion-panel">
+          <div>
             <strong> Application Submission Deadline:</strong>
             <span> Friday, July 19, 2019 at 4:00 PM <span>
             <h3>Position Overview </h3>
@@ -258,8 +293,11 @@
               University of Toronto's Career Centre website.</a>
             </p>
           </div>
+        </dd>
 
-        </div>
+        </dl>
+        <!-- End of Accordion -->
+
       </div>
 
       <a role="presentation" name="contact_us"></a>
