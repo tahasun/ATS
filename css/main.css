@@ -389,7 +389,7 @@ ul>li {
 .Accordion-title {
   display: block; /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8295099/ */
   pointer-events: none;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
