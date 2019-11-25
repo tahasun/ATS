@@ -347,80 +347,81 @@ nav #mobile_nav {
   text-align: center;
 }
 
+ul>li {
+  margin-bottom: 10px;
+}
 
-/* Accordion styling */
-.accordion-container {
+
+/************** Accessible Accordion Styling*************/
+.Accordion {
   margin: 30px 0px;
 }
 
-/* Accordion buttons */
-.panel-title {
-  vertical-align: middle;
-  background-color: #fff;
-  color: #002A5C;
-  cursor: pointer;
-  padding: 10px 18px;
-  width: 100%;
+.Accordion > * + * {
+    border-top: 1px solid hsl(0, 0%, 82%);
+}
+
+.Accordion-trigger {
+    background: none;
+    color: #002A5C;
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    /* padding: 1em 1.5em; */
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    border-top: 1px solid #383F51;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.Accordion-trigger:focus,
+.Accordion-trigger:hover {
+    background: hsl(0, 0%, 93%);
+}
+
+.Accordion-title {
+  display: block; /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8295099/ */
+  pointer-events: none;
   font-size: 18px;
-  font-weight: bold;
   text-align: left;
-  border-top: 1px solid #383F51;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-  outline: none;
-  transition: 0.4s;
 }
 
 
-.panel:last-of-type {
-  border-bottom: 1px solid #383F51;
-
+.Accordion-icon {
+    border: solid hsl(0, 0%, 62%);
+    border-width: 0 2px 2px 0;
+    height: .5rem;
+    pointer-events: none;
+    position: absolute;
+    right: 1.5em;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: .5rem;
 }
 
-
-/* Icon for open and closed panel */
-.panel-title:after {
-  vertical-align: inherit;
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga' 1;
-  -moz-font-feature-settings: 'liga' 1;
-  font-feature-settings: 'liga' 1;
-
-  content: "add";
-  font-size: 25px;
-  color: #002A5C;
-  float: right;
-  vertical-align: -50%;
-  margin-left: 5px;
-  border: none;
+.Accordion-trigger:focus .Accordion-icon,
+.Accordion-trigger:hover .Accordion-icon {
+    border-color: hsl(0, 0%, 13%);
 }
 
-.active:after {
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga' 1;
-  -moz-font-feature-settings: 'liga' 1;
-  font-feature-settings: 'liga' 1;
-
-  content: "remove";
-}
-/* Acive panel */
-.active{
-  border-bottom: none;
+.Accordion-trigger[aria-expanded="true"] .Accordion-icon {
+    transform: translateY(-50%) rotate(-135deg);
 }
 
-.panel {
-  padding: 0px 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.Accordion-panel {
+    margin: 0;
+    padding: 0vh 1vw;
+    font-size: 18px;
 }
 
-/* .panel p{
-  line-height: 10%;
-} */
-.panel a{
+.Accordion-panel a{
   text-decoration: underline;
   float: none;
   color: #456488;
@@ -436,12 +437,18 @@ nav #mobile_nav {
   border: none;
 }
 
-.panel.inactive {
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.Accordion-panel[hidden] {
   display: none;
 }
 
-ul>li {
-  margin-bottom: 10px;
+.Accordion-panel:last-of-type {
+  border-bottom: 1px solid #383F51;
+}
+
+dt:last-of-type{
+  border-bottom: 1px solid hsl(0, 0%, 82%);
 }
 /* ------------------------------------------------------------------------- */
 /*Hamburger Menu Show*/
