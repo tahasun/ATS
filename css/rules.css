@@ -120,7 +120,7 @@ ol {
 }
 
 .card {
-  flex: 1 1 20% !important; /*Creates 4 Columns*/
+  flex: 1 1 33% !important; /*Creates 4 Columns*/
   padding: 10px;
   margin: 10px;
   text-align: center;

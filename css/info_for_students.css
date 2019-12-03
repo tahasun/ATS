@@ -208,7 +208,7 @@ ol {
     align-items: center;
   }
   .booking-content-card {
-    /* flex-direction: row; */
+    flex: 1 1 auto;
   }
   .booking-content-card img{
     width: 150px;

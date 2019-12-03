@@ -200,7 +200,7 @@ td{
   align-items: baseline;
 }
 .content-card {
-  /*flex: 1 1 0;*/ /*test for mobile view overlap*/
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,8 +233,13 @@ td{
     font-size: 14px;
   }
   main {
-    padding-top: 14vh;
+    padding-top: 10vh;
   }
+
+  #skip_link, #mainContent {
+    display: hidden;
+  }
+
   .deadlines {
     margin: 4vh 2vw;
   }
@@ -280,6 +285,7 @@ td{
     flex-direction: column;
   }
   .content-card {
+    flex: 1 1 auto;
     padding: 0;
   }
   .content-card img{
