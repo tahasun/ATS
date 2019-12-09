@@ -63,7 +63,6 @@ nav hr {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-
 }
 /*Skip to main content link*/
 #skip_link {
@@ -128,11 +127,14 @@ nav hr {
     height: 80px;
 }
 #uoft_logo{
-  width: 180px;
-  padding: 12px;
+  /* width: 180px; */
+  width: 50%;
+  padding-right: 10px;
+  padding-top: 12px;
 }
 #ats_logo {
-  width: 200px;
+  width: 50%;
+  /* width: 200px; */
   padding-bottom: 8px;
 }
 
@@ -466,10 +468,15 @@ dt:last-of-type{
     height: 100%;
     align-items: space-between;
   }
-  #uoft_logo {
-    width: 220px;
+  /* #uoft_logo {
+    width: 180px;
     padding-bottom: 0;
-  }
+  } */
+  /* #ats_logo{
+    width: 150px;
+    margin-bottom: 0px;
+    padding: 0px;
+  } */
   #menu_icon {
     display: block;
     /* padding-left: 10vw; */
@@ -481,21 +488,24 @@ dt:last-of-type{
     display: none;
   }
   /* Header Styling */
-  .vertical_line {
-    display: none;
-  }
-  #ats_logo{
-    width: 180px;
-    margin-bottom: 0px;
-    padding: 0px;
-  }
+
+
 
 }
 /* Mobile Layout */
 @media screen and (max-width: 768px) {
+/* logos */
   .websites {
+    margin-left: 5%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+  }
+  .vertical_line {
+    display: none;
+  }
+  #uoft_logo {
+    padding-right: 0px;
   }
 /* Resources */
   .external-links {
@@ -546,9 +556,9 @@ dt:last-of-type{
 
 /* Responsive Layout Navigation Bars*/
 @media screen and (max-width: 1700px){
-  #uoft_logo{
-    width: 150px;
-  }
+  /* #uoft_logo{
+    width: 120px;
+  } */
 
   #sub_nav a {
     font-size: 20px;
