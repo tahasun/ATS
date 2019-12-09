@@ -14,18 +14,15 @@
   font-size: 20px;
   margin-top: 2px;
 }
-/* .main h3 {
-  margin: 10px 0px;
-} */
 
-/* Grid Styling */
 
+/*-------------------------Gallery Grid Styling------------------------- */
 .vbox-figlio {
   width: 50vw;
   height: 45vh;
 }
 
-/* Grid 1 */
+/*-------------------------- Grid 1 -------------------------- */
 .gallery-grid{
   display: flex;
   flex-direction: row;
@@ -33,40 +30,24 @@
   justify-content: space-around;
   align-items: center;
 }
-.small-grid {
-}
 
 .small-grid .gallery-grid-item {
   flex: 1 1 30% !important; /*Creates 4 Columns*/
   margin: 10px;
   max-width: 500px;
 }
-
-
-/* -------------------------------------------------- */
-/* Grid 2 */
-.large-grid {
-
-}
-
+/*-------------------------- Grid 2 -------------------------- */
 .large-grid .gallery-grid-item{
   flex: 1 1 20% !important; /*Creates 4 Columns*/
   margin: 10px;
   max-width: 500px;
 }
-
-/* -------------------------------------------------- */
-/* Grid 3 */
-.medium-grid {
-  /* padding-left: 13%; */
-}
-
+/*-------------------------- Grid 3 -------------------------- */
 .medium-grid .gallery-grid-item {
   flex: 1 1 25% !important; /*Creates 4 Columns*/
   margin: 10px;
 }
-
-/* General Grid item */
+/*-------------------- General Grid item Styling ---------------------- */
 .gallery-grid-item img{
   display: block;
   width: 450px;
@@ -79,7 +60,6 @@
     width: 300px;
     height: 200px;
     max-width: 100%;
-
   }
 }
 
@@ -90,7 +70,6 @@
   color: #eff;
   text-decoration: none;
 }
-
 
 .caption {
   border-bottom: 1px solid #eff;
@@ -151,6 +130,7 @@
   }
 }
 
+/* Mobile Layout */
 @media screen and (max-width: 768px) {
   .main {
     padding-top: 14vh;

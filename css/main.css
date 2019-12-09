@@ -11,6 +11,8 @@ html, body {
 .wrapper {
   overflow-x: hidden;
 }
+
+/* General Element Styles */
 a {
   color: white;
 }
@@ -22,7 +24,7 @@ ol {
   padding: 0;
 }
 
-/* top navigation bar */
+/* Top Navigation Bar */
 nav {
   color: white;
   position: fixed;
@@ -64,6 +66,37 @@ nav hr {
   flex-direction: row;
   align-items: baseline;
 }
+
+#menu_icon {
+  display: block;
+  margin-left: auto;
+
+  color: white;
+  text-align: right;
+  padding-right: 10vw;
+
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.vertical_line{
+    border-left: 1px solid #A9ACAF;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 60px;
+}
+#uoft_logo{
+  width: 35%;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+#ats_logo {
+  width: 40%;
+  padding-bottom: 4px;
+}
+
+
 /*Skip to main content link*/
 #skip_link {
   z-index: 100;
@@ -103,48 +136,10 @@ nav hr {
 
   transition: 0.3s;
 }
+
 #hot-button:hover, #hot-button:focus {
 
   background-color: #ed5f00;
-}
-
-#menu_icon {
-  display: block;
-  margin-left: auto;
-
-  color: white;
-  text-align: right;
-  padding-right: 10vw;
-
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.vertical_line{
-    border-left: 1px solid #A9ACAF;
-    margin-top: 20px;
-    margin-bottom: 16px;
-    height: 80px;
-}
-#uoft_logo{
-  /* width: 180px; */
-  width: 50%;
-  padding-right: 10px;
-  padding-top: 12px;
-}
-#ats_logo {
-  width: 50%;
-  /* width: 200px; */
-  padding-bottom: 8px;
-}
-
-.box {
-  background-color: #00245c;
-  color: white;
-  padding: 2vh 2vw;
-  margin: 10px 0px 40px 0px;
-  text-align: center;
-  font-weight: bold;
 }
 
 #menu_icon {
@@ -155,6 +150,7 @@ nav hr {
 #menu_icon i {
   font-size: 42px;
 }
+
 /*------------------- mobile/tablet top nav bar styling ----------------------*/
 nav #mobile_nav {
   display: none;
@@ -175,7 +171,6 @@ nav #mobile_nav {
 .overlay-content {
   position: relative;
   top: 10%;
-  /* width: 100%; */
   text-align: center;
   margin-top: 30px;
 }
@@ -212,6 +207,7 @@ nav #mobile_nav {
   right: 35px;
   }
 }
+
 /* Mobile navigation Component styling */
 #mobile_nav ul {
   list-style: none;
@@ -219,19 +215,15 @@ nav #mobile_nav {
   margin: 0;
 }
 
-/* ------------------------------------------------------- */
 #menu_icon {
   display: none;
 }
-
-
-/* ---------------------------------------------------------------------------*/
+/* ------------------------------------------------------- */
 
 /* sub navigation bar */
 #sub_nav {
   background-color: #00234C;
   height: 30%;
-  /* grid-row: sub-nav-start / main-start; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -256,17 +248,14 @@ nav #mobile_nav {
 }
 
 
-
 /* Main Content styling is on seperate css files */
 .main{
   background-color: #ffffff;
-  /* padding-top: 14vh; */
 }
 
 /* Contact Information */
 #contact{
   background-color: #002A5C;
-  /* grid-row: main-end / footer-start; */
   padding: 3vh 20vw 10vh 20vw;
   margin: 0;
   color: white;
@@ -307,7 +296,6 @@ nav #mobile_nav {
 /* Related Resources */
 .resources-container {
   background-color: #E8E8E8;
-  /* grid-row: footer-end / footer-start; */
   padding: 3vh 7.5vw 10vh 7.5vw;
   text-align: center;
   line-height: 4vh;
@@ -321,7 +309,6 @@ nav #mobile_nav {
 .external-links {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: baseline;
   flex-wrap: nowrap;
 }
@@ -354,7 +341,7 @@ ul>li {
 }
 
 
-/************** Accessible Accordion Styling*************/
+/*--------- Accessible Accordion Styling ---------*/
 .Accordion {
   margin: 30px 0px;
 }
@@ -370,7 +357,6 @@ ul>li {
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
-    /* padding: 1em 1.5em; */
     position: relative;
     text-align: left;
     width: 100%;
@@ -439,7 +425,6 @@ ul>li {
   border: none;
 }
 
-
 /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
 .Accordion-panel[hidden] {
   display: none;
@@ -453,7 +438,7 @@ dt:last-of-type{
   border-bottom: 1px solid hsl(0, 0%, 82%);
 }
 /* ------------------------------------------------------------------------- */
-/*Hamburger Menu Show*/
+/*Hamburger Menu Show For Screen with width <= 1260px*/
 @media screen and (max-width: 1260px) {
   .main{
     padding-top: 14vh;
@@ -468,18 +453,8 @@ dt:last-of-type{
     height: 100%;
     align-items: space-between;
   }
-  /* #uoft_logo {
-    width: 180px;
-    padding-bottom: 0;
-  } */
-  /* #ats_logo{
-    width: 150px;
-    margin-bottom: 0px;
-    padding: 0px;
-  } */
   #menu_icon {
     display: block;
-    /* padding-left: 10vw; */
   }
   #sub_nav {
     display: none;
@@ -487,27 +462,28 @@ dt:last-of-type{
   #top_nav {
     display: none;
   }
-  /* Header Styling */
-
-
-
 }
+
 /* Mobile Layout */
 @media screen and (max-width: 768px) {
-/* logos */
+/* logos Mobile Style*/
   .websites {
     margin-left: 5%;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: flex-start; */
   }
   .vertical_line {
     display: none;
   }
   #uoft_logo {
     padding-right: 0px;
+    padding-bottom: 0px;
+    width: 50%;
   }
-/* Resources */
+  #ats_logo {
+    width: 50%;
+  }
+/* Resources Mobile Style */
   .external-links {
     flex-direction: column;
     align-items: center;
@@ -523,7 +499,7 @@ dt:last-of-type{
     font-size: 14px;
   }
 
-/* Contact */
+/* Contact Mobile Style*/
   .map {
     display: none;
   }
@@ -540,7 +516,7 @@ dt:last-of-type{
 }
 
 @media (min-width: 768px) and (max-width: 1350px) {
-
+  /* Contact Style For Medium Screens */
   .contact-content{
     font-size: 14px;
   }
@@ -556,10 +532,6 @@ dt:last-of-type{
 
 /* Responsive Layout Navigation Bars*/
 @media screen and (max-width: 1700px){
-  /* #uoft_logo{
-    width: 120px;
-  } */
-
   #sub_nav a {
     font-size: 20px;
   }

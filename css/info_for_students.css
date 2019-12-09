@@ -60,14 +60,10 @@ ol {
 .content-container {
   display: flex;
   flex-direction: column;
-  /* padding: 10px 6.2vw; */
-
 }
 .content{
   font-size: 18px;
   padding: 30px 6.2vw;
-  /* padding: 30px 0px; */
-
 }
 
 .content h5{
@@ -112,7 +108,6 @@ ol {
 
 .content th{
   background: #002A5C;
-  /* border-radius: 5px 0px 0px 5px; */
   color: white;
   text-align: left;
   padding: 2px 6px;
@@ -123,7 +118,6 @@ ol {
 .content td{
   border-top: 1px solid #002A5C;
   border-right: 1px solid #002A5C;
-  /* border-radius: 0px 5px 5px 0px; */
   padding-left: 10px;
 }
 .no_decor {
@@ -133,8 +127,8 @@ ol {
 .no_decor a{
   float: none;
 }
-/* Booking Confirmation and Notifications */
 
+/* Booking Confirmation and Notifications */
 .booking-content h3 {
   text-align: center;
 }
@@ -171,7 +165,7 @@ ol {
   list-style-type: lower-alpha;
 }
 
-
+/*Panelling Backgrounds*/
 #Deferred, #Academic_conflicts, #Exam {
   background-image: url("images/notebook.png");
   background-repeat: repeat;

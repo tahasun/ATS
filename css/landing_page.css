@@ -1,4 +1,3 @@
-/* --------------------------------Landing Page------------------------------ */
 main {
   padding-top: 14vh;
 }
@@ -16,6 +15,8 @@ main a:hover, main a:focus  {
 main ol {
   list-style-type: decimal;
 }
+
+/* Hero Image */
 .hero-image {
   margin: 0px;
   height: 40vh;
@@ -106,9 +107,7 @@ td{
 }
 
 
-/* -------------------------------------------------------------------------- */
 /* card styling */
-
 .card {
   display: flex;
   flex-direction: row;
@@ -133,7 +132,6 @@ td{
   padding-top: 50px;
   padding-left: 4vw;
 }
-
 
 .title h2 {
   margin: 1px 0px;
@@ -160,7 +158,6 @@ td{
 }
 .text ol{
   margin: 22px 2px ;
-  /* padding: 0; */
 }
 
 .expanded-button {
@@ -181,8 +178,6 @@ td{
   color: white;
   width: 90%;
 }
-
-/* Mobile Layout */
 
 /* Booking Confirmation and Notifications */
 .notification {
@@ -208,10 +203,7 @@ td{
 .content-card:not(:last-child) {
   padding: 1vh 2vw 1vh 0vw ;
 }
-/* .content-card h3{
-  align-self: flex-start;
-  padding-left: 40px;
-} */
+
 .content{
   align-self: flex-start;
   padding-left: 40px;
@@ -240,39 +232,6 @@ td{
     display: hidden;
   }
 
-  .deadlines {
-    margin: 4vh 2vw;
-  }
-
-  .deadlines th, td{
-    padding: 2px 2px;
-    font-size: 16px;
-    font-weight: normal;
-    text-transform: capitalize;
-  }
-
-  .deadlines table{
-    width: 90%;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0 4vw 6vw 6vw;
-  }
-  .title{
-    padding-bottom: 30px;
-  }
-  .title h2{
-    font-size: 16px;
-    text-align: center;
-  }
-  .title .medium{
-    font-size: 14px;
-    text-align: center;
-  }
   .hero-text {
     width: 75%;
   }
@@ -292,5 +251,40 @@ td{
     width: 150px;
   }
 
+  /* Deadlines Table Mobile Style */
+  .deadlines {
+    margin: 4vh 2vw;
+  }
+
+  .deadlines th, td{
+    padding: 2px 2px;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+
+  .deadlines table{
+    width: 90%;
+  }
+
+  /*Banner Mobile Styling*/
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 4vw 6vw 6vw;
+  }
+  .title{
+    padding-bottom: 30px;
+  }
+  .title h2{
+    font-size: 16px;
+    text-align: center;
+  }
+  .title .medium{
+    font-size: 14px;
+    text-align: center;
+  }
 
 }
