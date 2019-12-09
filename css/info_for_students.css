@@ -6,6 +6,11 @@ ol {
   list-style-type: none;
 }
 
+/* Empasize */
+.box {
+  font-style: italic;
+}
+
 #button a{
   float: none;
   display: inline-block;
