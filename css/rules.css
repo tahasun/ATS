@@ -12,6 +12,10 @@ ol {
 
 }
 
+h3 {
+  font-size: 26px;
+  text-transform: capitalize;
+}
 /*Back to Top anchor links*/
 .anchor {
   margin-bottom: 30px;
@@ -120,13 +124,13 @@ ol {
 }
 
 .card {
-  flex: 1 1 33% !important; /*Creates 4 Columns*/
+  flex: 1 1 25% !important; /*Creates 4 Columns*/
   padding: 10px;
   margin: 10px;
   text-align: center;
 }
 .card5 {
-  flex: 1 1 25% !important; /*Creates 4 Columns*/
+  flex: 1 1 25% !important; /*Creates 2 Columns*/
   padding: 10px;
   margin: 10px;
   text-align: left;
