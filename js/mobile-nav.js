@@ -42,7 +42,6 @@ function showIcon(screenWidth) {
   } else {
     element.setAttribute("aria-hidden", "true");
   }
-
 }
 
 

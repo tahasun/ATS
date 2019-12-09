@@ -21,7 +21,6 @@ $(window).scroll(function() {
           },
           complete: function() {
             $this.text(this.countNum);
-            //alert('finished');
           }
 
         });
