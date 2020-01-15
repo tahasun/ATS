@@ -1,4 +1,5 @@
 main {
+  display: block;
   padding-top: 14vh;
 }
 
@@ -84,6 +85,7 @@ main ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
   margin: 45px;
 
 }
@@ -125,10 +127,11 @@ td{
 }
 
 .content-card img{
-  width: 200px;
+  width: 250px;
 }
 
 .title {
+  flex: 1 1 25%;
   padding-top: 50px;
   padding-left: 4vw;
 }
@@ -150,12 +153,19 @@ td{
 }
 
 .text{
+  flex: 1 1 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 2vw;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
+
+.text > * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .text ol{
   margin: 22px 2px ;
 }
@@ -195,13 +205,17 @@ td{
   align-items: baseline;
 }
 .content-card {
-  flex: 1 1 0;
+  flex: 1 1 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .content-card:not(:last-child) {
   padding: 1vh 2vw 1vh 0vw ;
+}
+
+.content-card > * {
+  max-width: 100%;
 }
 
 .content{

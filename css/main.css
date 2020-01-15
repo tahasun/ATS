@@ -54,10 +54,7 @@ nav hr {
 
   height: 70%;
   padding: 0 4vw;
-  width: 100vw;
-  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
 }
 
@@ -73,7 +70,6 @@ nav hr {
 
   color: white;
   text-align: right;
-  padding-right: 10vw;
 
   text-decoration: none;
   font-size: 20px;
@@ -123,7 +119,6 @@ nav hr {
   border: 5px solid #ed5f00;
   border-radius: 15px;
   margin-left: auto;
-  margin-right: 10vw;
   width: 200px;
 
   padding: 10px;
@@ -138,12 +133,11 @@ nav hr {
 }
 
 #hot-button:hover, #hot-button:focus {
-
   background-color: #ed5f00;
 }
 
 #menu_icon {
-  flex: 1 1 0;
+  flex: 1 1 0%;
   margin-right: auto;
 }
 
@@ -234,7 +228,7 @@ nav #mobile_nav {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.3em;
   transition: 0.3s;
 }
 #sub_nav a:hover, #sub_nav a:focus {
@@ -274,7 +268,7 @@ nav #mobile_nav {
   padding-top: 2vh;
 }
 .contact-content{
-  flex: 1 1 0;
+  flex: 1 1 0%;
   padding: 0px 10px 0px 62px;
   line-height: 130%;
 }
@@ -285,7 +279,7 @@ nav #mobile_nav {
 }
 
 .map {
-  flex: 1 1 0;
+  flex: 1 1 0%;
   overflow: hidden;
   background:none!important;
   height:30vh;
@@ -314,7 +308,7 @@ nav #mobile_nav {
 }
 
 .link-card{
-  flex: 1 1 0;
+  flex: 1 1 0%;
 }
 
 .link-card ul{
@@ -533,6 +527,6 @@ dt:last-of-type{
 /* Responsive Layout Navigation Bars*/
 @media screen and (max-width: 1700px){
   #sub_nav a {
-    font-size: 20px;
+    padding-bottom: 24px;
   }
 }

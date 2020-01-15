@@ -146,13 +146,18 @@ ol {
   align-items: baseline;
 }
 .booking-content-card {
-  flex: 1 1 0;
+  flex: 1 1 0%;
+  /* max-width: 100% */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .booking-content-card:not(:last-child) {
   padding: 1vh 2vw 1vh 0vw ;
+}
+
+.booking-content-card > * {
+  max-width: 100%;
 }
 
 .booking-content{

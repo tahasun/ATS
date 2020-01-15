@@ -1,5 +1,5 @@
 .main {
-  padding-top: 240px;
+  padding-top: 20vh;
 }
 
 /* Material Icons Large  */
@@ -10,6 +10,7 @@
 /* Medium Icons */
 .medium-icon {
   width: 350px;
+  height: 350px;
 }
 
 .intro {
@@ -92,6 +93,7 @@
 .collaboration {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   padding: 20px 22vw;
 }
@@ -315,7 +317,8 @@ span::before, span::after{
 
   /* Medium Icons */
   .medium-icon {
-    width: 100px;
+    width: 150px;
+    height: 150px;
   }
   svg {
     display: none;
