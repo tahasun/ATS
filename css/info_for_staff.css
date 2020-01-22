@@ -1,5 +1,7 @@
 .main{
-    padding: 20vh 6.2vw 200px 6.2vw;
+    padding-right: 6.2vw;
+    padding-bottom: 200px;
+    padding-left: 6.2vw;
     font-size: 1rem;
 }
 

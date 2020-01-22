@@ -245,6 +245,26 @@ nav #mobile_nav {
 /* Main Content styling is on seperate css files */
 .main{
   background-color: #ffffff;
+  padding-top: 20vh;
+}
+
+main{
+  background-color: #ffffff;
+  padding-top: 20vh;
+}
+
+@media only screen and (max-height: 770px) {
+  nav {
+    height: 24vh;
+  }
+
+  #sub_nav a {
+    font-size: 1.1em;
+  }
+
+  .main{
+    padding-top: 24vh;
+  }
 }
 
 /* Contact Information */
