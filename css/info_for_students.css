@@ -8,6 +8,11 @@ ol {
   font-style: italic;
 }
 
+.custom-button {
+  background: transparent;
+  color: white;
+  border: none;
+}
 #button a{
   float: none;
   display: inline-block;

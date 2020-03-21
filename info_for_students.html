@@ -17,12 +17,18 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/info_for_students.css" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- JQuery Latest as of 2019 July -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <!-- CSS Animation with Parallax Scroll -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -95,9 +101,295 @@
       <div class="content-container" role="none">
         <div id="mainContent" style="position: relative; top: -14vh;"></div>
 
-        <div role="main" id="title" class="content" data-aos="fade-up">
+        <div role="main" id="title" class="content" >
+          <h1>Frequenly Asked Questions</h1>
+          <div class="container flex-row d-flex justify-content-between my-4">
+            <div class="card mr-1" style="background: #000710; color: white;">
+              <div class="card-body text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-button" data-toggle="modal" data-target="#schedulingModal">
+                  <h2 class="card-title h4">Scheduling</h2>
+                </button>
+              </div>
+            </div>
+            <div class="card mr-1" style="background: #001e43; color: white;">
+              <div class="card-body text-center">
 
-          <h1>Accommodated Testing Services Student Handbook</h1>
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-button" data-toggle="modal" data-target="#bookingModal">
+                  <h2 class="card-title h4">Booking</h2>
+                </button>
+              </div>
+            </div>
+            <div class="card mr-1" style="background: #002a5c; color: white;">
+              <div class="card-body text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-button" data-toggle="modal" data-target="#accomodationModal">
+                  <h2 class="card-title h4">Accomodations</h2>
+                </button>
+              </div>
+            </div>
+            <div class="card mr-1" style="background: #003676; color: white;">
+              <div class="card-body text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-button" data-toggle="modal" data-target="#academicModal">
+                  <h2 class="card-title h4">Academic Details</h2>
+                </button>
+              </div>
+            </div>
+            <div class="card" style="background: #00418f; color: white;">
+              <div class="card-body text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="custom-button" data-toggle="modal" data-target="#orientationModal">
+                  <h2 class="card-title h4">Orientation</h2>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal" id="schedulingModal" tabindex="-1" role="dialog" aria-labelledby="schedulingModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="schedulingModalTitle">Scheduling</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Click on the question for answer <br>
+                    (unclick to exit)
+                  </p>
+                  <ul>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="(Para1) Sed non tristique magna, ac accumsan eros. Sed hendrerit tellus neque. Integer nec accumsan augue. Pellentesque pulvinar, nulla et bibendum blandit, nunc diam finibus massa, a viverra lectus tortor ac mi. Etiam erat nulla, finibus in sapien id, pharetra scelerisque magna. Aliquam sodales tellus at mollis tempor. Nulla malesuada ligula eu euismod molestie. Proin sit amet nulla vel eros ultricies porttitor non sed ligula. Aliquam sed eros urna. Etiam porta mattis mauris, sit amet fringilla neque consectetur quis. Curabitur sit amet erat tincidunt, suscipit elit sit amet, semper ligula. Praesent eu urna quis felis fermentum ornare ac cursus lectus. Proin eget risus arcu. Phasellus ac laoreet purus. Sed lacinia lectus at est egestas, id tempus nisi mollis. Donec sit amet metus lacus.
+                      ">
+                        I have a test/lecture that conflicts with my ATS booking!
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        My Prof. says I can write at a different time than the class, what do I do?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        Will you automatically move any test based on my time accomodation
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        My Prof changed the time/duration of my test, what do I do?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        Can I ask to write on another day than the class?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        The professor is offering 2 seatings of the test, can I choose which one I write?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        I dont know when the class is writing the test, what should I enter?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        When do you close? Will I start at the same time as the class?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        I have a lab/group component after the test, when will I write the written portion with you?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        Why is my booking time different than the class?
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="Please forward your Prof's permission by email
+                      to tes.info@utoronto.ca. Please note that time changes after
+                      the registration deadline are not guranteed, but we will do
+                      our best to accommodate">
+                        Can I start my test earlier than my booking time?
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+          <!-- Modal -->
+          <div class="modal" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="bookingModalTitle">Bookings</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>I have a test/lecture that conflicts with my ATS booking!</li>
+
+                    <li>My Prof. says I can write at a different time than the class, what do I do?</li>
+                    <li>Will you automatically move any test based on my time accomodation</li>
+                    <li>My Prof changed the time/duration of my test, what do I do?</li>
+                    <li>Can I ask to write on another day than the class?</li>
+                    <li>The professor is offering 2 seatings of the test, can I choose which one I write?</li>
+                    <li>I dont know when the class is writing the test, what should I enter?</li>
+                    <li>When do you close? Will I start at the same time as the class?</li>
+                    <li>I have a lab/group component after the test, when will I write the written portion with you?</li>
+                    <li>Why is my booking time different than the class?</li>
+                    <li>Can I start my test earlier than my booking time?</li>
+                  </ul>
+                </div>
+                <!-- end of modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+          <!-- Modal -->
+          <div class="modal" id="accomodationModal" tabindex="-1" role="dialog" aria-labelledby="accomodationModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="accomodationModalTitle">Accomodations</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>I have a test/lecture that conflicts with my ATS booking!</li>
+                    <li>My Prof. says I can write at a different time than the class, what do I do?</li>
+                    <li>Will you automatically move any test based on my time accomodation</li>
+                    <li>My Prof changed the time/duration of my test, what do I do?</li>
+                    <li>Can I ask to write on another day than the class?</li>
+                    <li>The professor is offering 2 seatings of the test, can I choose which one I write?</li>
+                    <li>I dont know when the class is writing the test, what should I enter?</li>
+                    <li>When do you close? Will I start at the same time as the class?</li>
+                    <li>I have a lab/group component after the test, when will I write the written portion with you?</li>
+                    <li>Why is my booking time different than the class?</li>
+                    <li>Can I start my test earlier than my booking time?</li>
+                  </ul>
+                </div>
+                <!-- end of modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+          <!-- Modal -->
+          <div class="modal" id="academicModal" tabindex="-1" role="dialog" aria-labelledby="academicModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="academicModalTitle">Academic Details</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>I have a test/lecture that conflicts with my ATS booking!</li>
+                    <li>My Prof. says I can write at a different time than the class, what do I do?</li>
+                    <li>Will you automatically move any test based on my time accomodation</li>
+                    <li>My Prof changed the time/duration of my test, what do I do?</li>
+                    <li>Can I ask to write on another day than the class?</li>
+                    <li>The professor is offering 2 seatings of the test, can I choose which one I write?</li>
+                    <li>I dont know when the class is writing the test, what should I enter?</li>
+                    <li>When do you close? Will I start at the same time as the class?</li>
+                    <li>I have a lab/group component after the test, when will I write the written portion with you?</li>
+                    <li>Why is my booking time different than the class?</li>
+                    <li>Can I start my test earlier than my booking time?</li>
+                  </ul>
+                </div>
+                <!-- end of modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+          <!-- Modal -->
+          <div class="modal" id="orientationModal" tabindex="-1" role="dialog" aria-labelledby="orientationModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="orientationModalTitle">Orientation</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>I have a test/lecture that conflicts with my ATS booking!</li>
+                    <li>My Prof. says I can write at a different time than the class, what do I do?</li>
+                    <li>Will you automatically move any test based on my time accomodation</li>
+                    <li>My Prof changed the time/duration of my test, what do I do?</li>
+                    <li>Can I ask to write on another day than the class?</li>
+                    <li>The professor is offering 2 seatings of the test, can I choose which one I write?</li>
+                    <li>I dont know when the class is writing the test, what should I enter?</li>
+                    <li>When do you close? Will I start at the same time as the class?</li>
+                    <li>I have a lab/group component after the test, when will I write the written portion with you?</li>
+                    <li>Why is my booking time different than the class?</li>
+                    <li>Can I start my test earlier than my booking time?</li>
+                  </ul>
+                </div>
+                <!-- end of modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+
+          <h2>Accommodated Testing Services Student Handbook</h2>
           <div id="button" role="button">
             For a printable version
             <a href="forms/ATS_STUDENT_GUIDE_2019-2020.pdf" target="_blank">
@@ -1554,6 +1846,11 @@
 
   <!-- On scroll down hide navbar -->
   <script src="js/navbar_scroll.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+    })
+  </script>
   <script type="text/javascript">
     console.log(window.visualViewport.scale);
   </script>
